@@ -1,0 +1,23 @@
+/* 
+Colors and font:
+- Chart blue: #0065FC
+- Lighter blue: #DEEBFF
+- Grey background: #F2F2F2
+
+- font-family: 'Raleway', sans-serif;
+
+Breakpoints:
+Tablets --> max 992px.
+Mobile --> max 768px
+
+Computer first then Tablets then Mobile.
+
+*/
+
+p{
+    font-family: 'Raleway', sans-serif;
+}
+
+#ita{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
