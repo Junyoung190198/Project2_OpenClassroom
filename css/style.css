@@ -56,18 +56,20 @@ header{
 }
 
 .logo_container{
-    flex: 1 4 85%;
+    flex: 0 1 70%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 }
 
 .header_links{
-    flex: 0 1 18%;
+    flex: 0 1 30%;
     line-height: 135px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
+    gap: 60px;
+    border: none;
 }
 
 .header_link{
@@ -81,12 +83,12 @@ header{
 }
 
 #logo{
-    flex-basis: 10%;
+    flex-basis: 17%;
     margin-top: 30px;
     margin-bottom: 30px;
     background-color: transparent;
-    background-image: url(C:/coding/OpenClassroom/OC_Project2/Project2_OpenClassroom/Project2_OpenClassroom/images/logo/Booki@3x.png);
-    background-size: cover;
+    background-image: url(C:/coding/OpenClassroom/OC_Project2/Project2_OpenClassroom/images/logo/Booki@3x.png);
+    background-size: 80%;
     background-position: top 50% right 50%;
     background-repeat: no-repeat;
     border: none;
@@ -111,7 +113,6 @@ header{
     }
 
     .logo_container{
-        background-color: salmon;
         flex-basis: 50%;
         display: flex;
         flex-direction: row;
@@ -120,13 +121,11 @@ header{
     }
     
     .header_links{
-        background-color: aqua;
         flex-basis: 50%;
         line-height: 0px;
         display: flex;
         flex-direction: row;
         justify-content: space-around; 
-        
     }
 
     #logo{
@@ -134,11 +133,10 @@ header{
         margin : 0px;
         height: 100%;
         background-color: transparent;
-        background-image: url(C:/coding/OpenClassroom/OC_Project2/Project2_OpenClassroom/Project2_OpenClassroom/images/logo/Booki.png);
-        background-size: cover;
+        background-image: url(C:/coding/OpenClassroom/OC_Project2/Project2_OpenClassroom/images/logo/Booki.png);
+        background-size: 80%; /* not using cover because when small screen background disapear  */
         background-repeat: no-repeat;
         background-position: 1% 20%;
-        border: 2px solid black;
         cursor: pointer;
     }
 
@@ -148,7 +146,6 @@ header{
         color: inherit;
         text-align: center;
         line-height: 60px;
-        
     }
     
     .header_link:hover{
@@ -169,22 +166,20 @@ header{
         margin: 0px; /* no margin for space */
         display: flex;
         flex-flow: column;
-        flex-basis: 200px;
+        flex-basis: 130px;
     }
 
     .logo_container{
-        background-color: salmon;
-        flex-basis: 100px;
-        flex: 0 60%;
+        flex-basis: 50%;
+        flex-shrink: 0;
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-content: center;
+        
     }
     
     .header_links{
-        background-color: aqua;
-        flex: 0 40%;
+        flex-basis: 50%;
         line-height: 0px;
         display: flex;
         flex-direction: row;
@@ -193,15 +188,15 @@ header{
     }
 
     #logo{
-        border: 2px solid black;
-        flex-basis: 16%;
-        height: 70px;
+        flex-basis : 15%;
+        flex-shrink: 0;
+        margin : 0px;
+        height: 100%;
         background-color: transparent;
-        background-image: url(C:/coding/OpenClassroom/OC_Project2/Project2_OpenClassroom/Project2_OpenClassroom/images/logo/Booki.png);
-        background-size: 80%;
-        background-position: right 70% top 40%;
+        background-image: url(C:/coding/OpenClassroom/OC_Project2/Project2_OpenClassroom/images/logo/Booki.png);
+        background-size: 100%; /* Same reason as for Tablets */
         background-repeat: no-repeat;
-        border: none;
+        background-position: 1% 50%;
         cursor: pointer;
     }
 
@@ -211,7 +206,6 @@ header{
         color: inherit;
         text-align: center;
         line-height: 60px;
-        
     }
     
     .header_link:hover{
@@ -219,7 +213,6 @@ header{
         border-top: none;
         border-bottom: 2px solid #0065FC;
     }
-
 }
 
 
