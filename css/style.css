@@ -24,6 +24,14 @@
 --> Computer first then Tablets then Mobile.
 
 --> size: % and px.
+
+IMPORTANT:
+ 
+- Use back margin and no top margin for gap between sections !!
+- 
+
+
+
 */
 
 /* Changing the default browser style  */
@@ -32,18 +40,14 @@
     padding: 0px;
     box-sizing: border-box;
 
-    body{
-        min-height: 100vh;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 500;
-        font-size: 16px;
-    }
+   
 }
 
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+body{
+    min-height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 header{
@@ -62,7 +66,7 @@ header{
     justify-content: flex-start;
 }
 
-.header_links{
+nav{
     flex: 0 1 30%;
     line-height: 135px;
     display: flex;
@@ -72,12 +76,12 @@ header{
     border: none;
 }
 
-.header_link{
+.nav_link{
     text-decoration: none;
     color: inherit;
 }
 
-.header_link:hover{
+.nav:hover{
     color: #0065FC;
     border-top : 2px solid #0065FC;
 }
@@ -87,10 +91,6 @@ header{
     margin-top: 30px;
     margin-bottom: 30px;
     background-color: transparent;
-    background-image: url(C:/coding/OpenClassroom/OC_Project2/Project2_OpenClassroom/images/logo/Booki@3x.png);
-    background-size: 80%;
-    background-position: top 50% right 50%;
-    background-repeat: no-repeat;
     border: none;
     cursor: pointer;
 }
@@ -100,11 +100,6 @@ header{
 /* Media query for Tablets breakpoints */
 @media (min-width: 768px) and (max-width: 992px){
 
-    .wrapper{
-        display: flex;
-        flex-direction: column;
-    }
-
     header{
         margin: 0px; /* no margin for space */
         display: flex;
@@ -120,7 +115,7 @@ header{
         
     }
     
-    .header_links{
+    nav{
         flex-basis: 50%;
         line-height: 0px;
         display: flex;
@@ -133,14 +128,10 @@ header{
         margin : 0px;
         height: 100%;
         background-color: transparent;
-        background-image: url(C:/coding/OpenClassroom/OC_Project2/Project2_OpenClassroom/images/logo/Booki.png);
-        background-size: 80%; /* not using cover because when small screen background disapear  */
-        background-repeat: no-repeat;
-        background-position: 1% 20%;
         cursor: pointer;
     }
 
-    .header_link{
+    .nav_link{
         flex: 0 1 50%;
         text-decoration: none;
         color: inherit;
@@ -148,7 +139,7 @@ header{
         line-height: 60px;
     }
     
-    .header_link:hover{
+    .nav_link:hover{
         color: #0065FC;
         border-top: none;
         border-bottom: 2px solid #0065FC;
@@ -157,11 +148,7 @@ header{
 
 /* Media query for Mobile breakpoint */
 @media all and (max-width: 768px){
-    .wrapper{
-        display: flex;
-        flex-direction: column;
-    }
-
+  
     header{
         margin: 0px; /* no margin for space */
         display: flex;
@@ -178,7 +165,7 @@ header{
         
     }
     
-    .header_links{
+    nav{
         flex-basis: 50%;
         line-height: 0px;
         display: flex;
@@ -193,14 +180,10 @@ header{
         margin : 0px;
         height: 100%;
         background-color: transparent;
-        background-image: url(C:/coding/OpenClassroom/OC_Project2/Project2_OpenClassroom/images/logo/Booki.png);
-        background-size: 100%; /* Same reason as for Tablets */
-        background-repeat: no-repeat;
-        background-position: 1% 50%;
         cursor: pointer;
     }
 
-    .header_link{
+    .nav_link{
         flex: 0 1 50%;
         text-decoration: none;
         color: inherit;
@@ -208,7 +191,7 @@ header{
         line-height: 60px;
     }
     
-    .header_link:hover{
+    .nav_link:hover{
         color: #0065FC;
         border-top: none;
         border-bottom: 2px solid #0065FC;
