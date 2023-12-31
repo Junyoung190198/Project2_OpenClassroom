@@ -148,7 +148,8 @@ section{
 }
 
 .search_bar:focus{
-    border: 1px solid black;
+    border: 1px solid #8A8A8A;
+    
 }
 
 ::placeholder{
@@ -219,23 +220,33 @@ section{
     border-radius: 50%;
 }
 
-.filter_items:nth-child(1){
-    border: 3px solid black;
-    border-radius: 40%;
+.filter_items{
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
 }
 
-#low_cost{
-    border: 3px solid black;
+.filter_items:nth-child(1){
+    flex-basis: 25%;
+    border: 1px solid black;
+    border-radius: 20%;
 }
-#family_friendly{
-    padding: 15px;
+.filter_items:nth-child(2){
+    flex-basis: 25%;
+    border: 1px solid black;
+    border-radius: 30%;
 }
-#romantic{
-    padding: 15px;
+.filter_items:nth-child(3){
+    flex-basis: 25%;
+    border: 1px solid black;
+    border-radius: 30%;
 }
-#pets_allowed{
-    padding: 15px;
+.filter_items:nth-child(4){
+    flex-basis: 25%;
+    border: 1px solid black;
+    border-radius: 30%;
 }
+
 
 
 
