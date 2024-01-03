@@ -49,6 +49,10 @@ body{
     font-size: 16px;
 }
 
+form{
+    display: flex;
+}
+
 input[type="text"], input[type="password"], textarea, select { 
     outline: none;
 }
@@ -140,7 +144,7 @@ section{
     font-size: 130%;
 }
 .search_bar{
-    width: 285px;
+    width: 300px;
     border: 1px solid #F2F2F2; /* Same border for the 3 elements */
     border-left: none;
     border-right: none;
