@@ -186,7 +186,8 @@ section{
 }
 .filter_items{
     display: inline-block;
-    width: 110%;
+    width: 100%;
+    padding-right: 16px;
     font-weight: 700;
     border: 3px solid #D5D5D5;
     border-radius: 30px;
@@ -235,7 +236,15 @@ section{
     font-weight: 400;
 }
 
-/* ARTICLE */
+/* SECTION CARDS */
+#cards{
+    display: none;
+    visibility: hidden;
+}
+#cards_2{
+    display: none;
+    visibility: hidden;
+}
 article{
 
 }
@@ -530,7 +539,6 @@ section{
     }
     .search_button_desktop{
         display: none;
-        visibility: none;
     }
     .search_button_mobile{
         flex-shrink: 0;
@@ -554,6 +562,11 @@ section{
         gap: 20px; /* small gap when wrap for mobile */
         margin-bottom: 25px; /* small margin for tablets and mobiles */
     }
+    
+    .filter_list li:nth-child(1){
+        width: 100%;
+    }
+
     .filter_items{
         flex: 1 1 25%;
         display: flex;
