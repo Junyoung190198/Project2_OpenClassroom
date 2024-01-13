@@ -22,10 +22,12 @@
     <link rel="stylesheet" href="css/style.css" type="text/css"> <!-- Putting CSS import at the end to avoid overrride -->
     <title>Booki Main Page</title>
 </head>
+
 <body>
+    <!-- Header part: Header, Nav, Search section, Filters section -->
     <header>
         <div class="logo_container">
-            <a id="logo" href="#"><img src="images/logo/Booki.png"></a>
+            <a id="logo" href="#"><img src="images/logo/Booki.png" alt="Logo"></a>
         </div>
 
         <nav>
@@ -87,36 +89,145 @@
         </div>
     </section>
 
-    <section id="cards">
-        <div>
+
+    <!-- Main part: Accomodations cards section, Popular cards section, Activities cards section -->
+    <section id="main_body_wrapper1">
+
+        <div id="accomodations_cards_wrapper">
+            <h2 id="accomodations_cards_title">Accomodations in Marseille</h2> 
+
             <article class="accomodations_cards">
-                <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
-                <div class="popular_cards_text">
+                <a href="#">
+                    <img class="accomodations_images" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Canebière">
+                    <div class="accomodations_cards_text">
+                        <h4>Auberge la Canebière</h4>
+                        <p>Night starting at <b>25€</b></p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </a>
+            </article>
+
+            <article class="accomodations_cards">
+                <a href="#">
+                    <img class="accomodations_images" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Canebière">
+                    <div class="accomodations_cards_text">
+                        <h4>Auberge la Canebière</h4>
+                        <p>Night starting at <b>25€</b></p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </a>
+            </article>
+
+            <article class="accomodations_cards">
+                <a href="#">
+                    <img class="accomodations_images" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Canebière">
+                    <div class="accomodations_cards_text">
+                        <h4>Auberge la Canebière</h4>
+                        <p>Night starting at <b>25€</b></p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </a>
+            </article>
+
+            <article class="accomodations_cards">
+                <a href="#">
+                    <img class="accomodations_images" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Canebière">
+                    <div class="accomodations_cards_text">
+                        <h4>Auberge la Canebière</h4>
+                        <p>Night starting at <b>25€</b></p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </a>
+            </article>
+
+            <article class="accomodations_cards">
+                <a href="#">
+                    <img class="accomodations_images" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Canebière">
+                    <div class="accomodations_cards_text">
+                        <h4>Auberge la Canebière</h4>
+                        <p>Night starting at <b>25€</b></p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </a>
+            </article>
+
+            <article class="accomodations_cards">
+                <a href="#">
+                    <img class="accomodations_images" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Canebière">
+                    <div class="accomodations_cards_text">
+                        <h4>Auberge la Canebière</h4>
+                        <p>Night starting at <b>25€</b></p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </a>
+            </article>
+            <h3>Show more</h3>
+        </div>
+
+
+        <aside id="popular_cards_wrapper">
+
+            <article class="">
+                <a href="#">
+                    
+                    <div class="">
     
-                </div>
-            </div>
-    
-        </article>
-        <aside>
-            <div class="popular_cards">
-                <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
-                <div class="popular_cards_text">
-    
-                </div>
-            </div>
+                    </div>
+                </a>
+            </article>
+
+            <article>
+
+
+            </article>
+
+
         </aside>
+
+
     </section>
 
-    <article id="cards_2">
-        <div class="activities_cards">
-            <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
-            <div class="accomodations_cards_text">
 
-            </div>
-        </div>
-    </article>
+    <section id="main_body_wrapper2">
+
+        <article class="">
+            <a href="#">
+                
+                <div class="">
+
+                </div>
+            </a>
+        </article>
 
 
+    </section>
+
+
+    <!-- Footer part: Footer -->
     <footer>
 
     </footer>
