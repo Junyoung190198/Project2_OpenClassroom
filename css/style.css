@@ -295,24 +295,18 @@ section{
     width: 10px;
     font-size: 12px;
 }
-.accomodations_cards:nth-child(2) .accomodations_cards_text i.fa-solid.fa-star:nth-child(n+3):nth-child(-n+6){
+/* Icons begin at child number 3 so : nth-child(n+3) */
+/* nth-child(-n+6) means ends at child number 6 */
+.accomodations_cards:nth-child(2) .accomodations_cards_text i.fa-solid.fa-star:nth-child(n+3):nth-child(-n+6), .accomodations_cards:nth-child(4) .accomodations_cards_text i.fa-solid.fa-star:nth-child(n+3):nth-child(-n+6), .accomodations_cards:nth-child(6) .accomodations_cards_text i.fa-solid.fa-star:nth-child(n+3):nth-child(-n+6){
     color: #0065FC;
 }
-.accomodations_cards:nth-child(3) .accomodations_cards_text i.fa-solid.fa-star{
-    color: #0065FC;
-}
-.accomodations_cards:nth-child(4) .accomodations_cards_text i.fa-solid.fa-star:nth-child(n+3):nth-child(-n+6){
+.accomodations_cards:nth-child(3) .accomodations_cards_text i.fa-solid.fa-star, .accomodations_cards:nth-child(7) .accomodations_cards_text i.fa-solid.fa-star{
     color: #0065FC;
 }
 .accomodations_cards:nth-child(5) .accomodations_cards_text i.fa-solid.fa-star:nth-child(n+3):nth-child(-n+5){
     color: #0065FC;
 }
-.accomodations_cards:nth-child(6) .accomodations_cards_text i.fa-solid.fa-star:nth-child(n+3):nth-child(-n+6){
-    color: #0065FC;
-}
-.accomodations_cards:nth-child(7) .accomodations_cards_text i.fa-solid.fa-star{
-    color: #0065FC;
-}
+
 
 
 /* POPULAR CARDS */
@@ -329,49 +323,54 @@ section{
     display: flex;
     justify-content: space-between;
 }
+#most_popular_title_container i.fa-solid.fa-star{
+    font-size: 20px;
+}
 .popular_cards{
-    flex: 1 1 200px;
+    flex: 0 1 150px;
+    width: 350px;
     background-color: #fff;
     border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: flex;
+    
 }
 .popular_cards:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
 }
-.popular_cards_container{
-    display: flex;
-    gap: 10px;
-}
 .popular_images{
-    width: 150px;
-    flex: 1 1 150px;
+    height: 100%;
+    width: 35%;
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
     padding: 5px;
     object-fit: cover; /* Cut the image without resizing */
 }
 .popular_cards_text{
-    padding: 10px 0px;
+    padding: 5px 20px;
 }
-.popular_cards_text *{
-    padding: 3px;
-    
+.popular_cards_text > h4{
+    padding: 10px;
+    padding-bottom: 15px;
 }
-.accomodations_cards_text{
-    padding: 0px 10px;
+.popular_cards_text > p{
+    padding: 10px;
+    padding-bottom: 15px;
 }
-.accomodations_cards_text *{
-    padding: 3px;
-    padding-top: 0px;
+.popular_cards_text > .star_icons_container{
+    padding: 10px;
 }
-
-
 .popular_cards_text i.fa-star{
-    color: #0065FC;
+    color: #F2F2F2;
     width: 10px;
     font-size: 12px;
 }
-
+.popular_cards:nth-child(2) .popular_cards_text i.fa-solid.fa-star{
+    color: #0065FC;
+}
+.popular_cards:nth-child(3) .star_icons_container i.fa-solid.fa-star:nth-child(n):nth-child(-n+4), .popular_cards:nth-child(4) .star_icons_container i.fa-solid.fa-star:nth-child(n):nth-child(-n+4){
+    color: #0065FC;
+}
 
 /* BODY SECTION 2 */
 /* ACTIVITIES CARDS */
@@ -379,7 +378,6 @@ section{
     display: none;
     margin-bottom: 40px;
 }
-
 
 
 
