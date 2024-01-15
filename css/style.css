@@ -114,8 +114,8 @@ nav{
 }
 
 /* SECTION */
-section{
-    margin: 0px 70px 0px 70px; /* Same margin righ-left for all the sections */
+#title_section{
+    margin: 0px 70px 0px 70px; /* Same margin righ-left */
 }
 /* 3 Sections: Search/filters section, main_body1, main_body2 */
 
@@ -242,6 +242,7 @@ section{
 
 /* BODY SECTION 1 */
 #main_body_wrapper1{
+    margin: 0px 70px 0px 70px;
     display: flex;
     gap: 40px;
     margin-bottom: 40px;
@@ -275,6 +276,12 @@ section{
 .accomodations_cards:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
 }
+.accomodations_cards_container{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
 .accomodations_images{
     width: 100%;
     height: 60%;
@@ -295,19 +302,9 @@ section{
     width: 10px;
     font-size: 12px;
 }
-/* Icons begin at child number 3 so : nth-child(n+3) */
-/* nth-child(-n+6) means ends at child number 6 */
-.accomodations_cards:nth-child(2) .accomodations_cards_text i.fa-solid.fa-star:nth-child(n+3):nth-child(-n+6), .accomodations_cards:nth-child(4) .accomodations_cards_text i.fa-solid.fa-star:nth-child(n+3):nth-child(-n+6), .accomodations_cards:nth-child(6) .accomodations_cards_text i.fa-solid.fa-star:nth-child(n+3):nth-child(-n+6){
+.accomodations_cards_text i.fa-star.star_blue{
     color: #0065FC;
 }
-.accomodations_cards:nth-child(3) .accomodations_cards_text i.fa-solid.fa-star, .accomodations_cards:nth-child(7) .accomodations_cards_text i.fa-solid.fa-star{
-    color: #0065FC;
-}
-.accomodations_cards:nth-child(5) .accomodations_cards_text i.fa-solid.fa-star:nth-child(n+3):nth-child(-n+5){
-    color: #0065FC;
-}
-
-
 
 /* POPULAR CARDS */
 #popular_cards_wrapper{
@@ -329,14 +326,17 @@ section{
 .popular_cards{
     flex: 0 1 150px;
     width: 350px;
+    max-height: 150px;
     background-color: #fff;
     border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     display: flex;
-    
 }
 .popular_cards:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
+.popular_cards_container{
+    display: flex;
 }
 .popular_images{
     height: 100%;
@@ -365,10 +365,7 @@ section{
     width: 10px;
     font-size: 12px;
 }
-.popular_cards:nth-child(2) .popular_cards_text i.fa-solid.fa-star{
-    color: #0065FC;
-}
-.popular_cards:nth-child(3) .star_icons_container i.fa-solid.fa-star:nth-child(n):nth-child(-n+4), .popular_cards:nth-child(4) .star_icons_container i.fa-solid.fa-star:nth-child(n):nth-child(-n+4){
+.popular_cards_text i.fa-star.star_blue{
     color: #0065FC;
 }
 
