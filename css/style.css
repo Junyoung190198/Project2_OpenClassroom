@@ -66,6 +66,9 @@ li{ /* Remove default */
     display: inline-block;
     list-style: none;
 }
+ul{
+    padding: 0px;
+}
 
 
 
@@ -269,7 +272,8 @@ nav{
 
 .accomodations_cards{
     background-color: #fff;
-    flex: 0 1 250px;
+    flex: 1 1 30%;
+    min-width: 200px;
     height: 190px;
     border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -387,23 +391,21 @@ nav{
 /* BODY SECTION 2 */
 /* ACTIVITIES CARDS */
 #main_body_wrapper2{
-    margin: 0px 70px 40px 70px; /* Same margin right bottom left */
+    margin: 0px 65px 40px 70px; /* Same margin left bottom and 65px left to align */
 }
 
-.activities_cards_wrapper{
+.activities_cards_wrapper{ 
    padding-top: 20px;
     display: flex;
     flex-flow: column wrap;
-    align-content: space-between;
     gap: 40px;
     height: 500px;
     width: 100%;
-    
 }
 .activities_cards{
-    width: 300px;
-    height: 100%;
-    max-height: 500px;
+    flex: 1 1 100%;
+    width: 22%;
+    max-height: 100%; /* For the images not to streatch the container */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 25px;
 }
@@ -417,45 +419,54 @@ nav{
 }
 .activities_images{
     width: 100%;
-    height: 85%;
+    height: 88%;
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
     object-fit: cover;
 }
-.activities_cards:nth-of-type(1){
-    order: 1;
+.two_cards_wrapper{
+    max-height: 100%;
+    flex: 1 1 100%;
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
 }
-.activities_cards:nth-of-type(2){
-    height: 250px;
-    order: 2;
+.activities_cards_in_wrapper{
+    max-height: 100%;
+    flex: 1 1 100%;
+         /* For the images not to streatch the container */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 25px;
 }
-.activities_cards:nth-of-type(2) .activities_images{
+
+.two_cards_wrapper:nth-of-type(1) .activities_cards_in_wrapper:nth-child(1){
+    max-height: 63%;
+}
+.two_cards_wrapper:nth-of-type(1) .activities_cards_in_wrapper:nth-child(2){
+    max-height: 29%;
+}
+.two_cards_wrapper:nth-of-type(1) .activities_cards_in_wrapper:nth-child(1) .activities_images{
     height: 80%;
 }
-.activities_cards:nth-of-type(3){
-    height: 190px;
-    order: 2;
+.two_cards_wrapper:nth-of-type(1) .activities_cards_in_wrapper:nth-child(2) .activities_images{
+    height: 65%;
 }
-.activities_cards:nth-of-type(3) .activities_images{
-    height: 70%;
+    
+.two_cards_wrapper:nth-of-type(2) .activities_cards_in_wrapper:nth-child(1){
+    max-height: 50%;
 }
-.activities_cards:nth-of-type(4){
-    order: 3;
+.two_cards_wrapper:nth-of-type(2) .activities_cards_in_wrapper:nth-child(2){
+    max-height: 42%;
 }
-.activities_cards:nth-of-type(5){
-    height: 190px;
-    order: 4;
+.two_cards_wrapper:nth-of-type(2) .activities_cards_in_wrapper:nth-child(1) .activities_images{
+    height: 75%;
 }
-.activities_cards:nth-of-type(5) .activities_images{
-    height: 70%;
+.two_cards_wrapper:nth-of-type(2) .activities_cards_in_wrapper:nth-child(2) .activities_images{
+    height: 75%;
 }
-.activities_cards:nth-of-type(6){
-    height: 250px;
-    order: 4;
-}
-.activities_cards:nth-of-type(6) .activities_images{
-    height: 80%;
-}
+
 .activities_cards_text{
     padding: 15px;
 }
