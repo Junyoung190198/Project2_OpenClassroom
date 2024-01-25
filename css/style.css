@@ -440,6 +440,9 @@ nav{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 25px;
 }
+.activities_cards_in_wrapper:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
 
 .two_cards_wrapper:nth-of-type(1) .activities_cards_in_wrapper:nth-child(1){
     max-height: 63%;
@@ -473,6 +476,32 @@ nav{
 
 
 
+/* FOOTER */
+#footer_wrapper{
+    background-color: #F2F2F2;
+    display: flex;
+    gap: 100px;
+    padding-left: 70px;
+    padding-top: 50px;
+    height: 250px;
+}
+#about_section{
+    flex: 0 0 27%;
+}
+#our_accomodation_section{
+    flex: 0 0 20%;
+}
+#assistance_section{
+    flex: 0 0 20%;
+}
+.footer_list{
+    font-weight: 400;
+    padding-top: 20px;
+}
+.footer_list_element{
+    display: block;
+    padding-bottom: 15px;
+}
 
 
 /* Media query for Tablets breakpoints */
@@ -663,7 +692,7 @@ nav{
         margin: 0px; /* Smaller for tablets */
         display: flex;
         flex-wrap: wrap-reverse;
-        gap: 10px;
+        gap: 0px;
         margin-bottom: 40px;
     }
 
@@ -676,10 +705,11 @@ nav{
         justify-content: center;
         gap: 15px;
         padding: 40px;
-        border-radius: 25px;
+        border-radius: 0px;
     }
     #accomodations_cards_wrapper > h2{ /* Make both title take 100% of width */
         flex: 1 1 100%;
+        margin-left: 30%;
 
     }
     #accomodations_cards_wrapper > h3{
@@ -738,7 +768,7 @@ nav{
         gap: 15px;
         padding: 40px;
         background-color: #F2F2F2;
-        border-radius: 25px;
+        border-radius: 0px;
     }
     #most_popular_title_container{
         width: 100%;
@@ -807,12 +837,119 @@ nav{
 
 
     /* BODY SECTION 2 */
-    /* ACTIVITIES CARDS */
-    #main_body_wrapper2{
-        display: none;
-        margin-bottom: 40px;
-    }
+/* ACTIVITIES CARDS */
+#main_body_wrapper2{
+    margin: 0px 10px 40px 20px; /* 20px margin for tablets */
 }
+
+.activities_cards_wrapper{ 
+   padding-top: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+    height: 500px;
+    width: 100%;
+}
+.activities_cards{
+    flex: 1 1 100%;
+    width: 24%;
+    max-height: 100%; /* For the images not to streatch the container */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 25px;
+}
+.activities_cards:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
+.activities_cards_container{ /* Entirely clickable */
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.activities_images{
+    width: 100%;
+    height: 88%;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    object-fit: cover;
+}
+.two_cards_wrapper{
+    max-height: 100%;
+    flex: 1 1 100%;
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+}
+.activities_cards_in_wrapper{
+    max-height: 100%;
+    flex: 1 1 100%;
+         /* For the images not to streatch the container */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 25px;
+}
+.activities_cards_in_wrapper:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
+
+.two_cards_wrapper:nth-of-type(1) .activities_cards_in_wrapper:nth-child(1){
+    max-height: 63%;
+}
+.two_cards_wrapper:nth-of-type(1) .activities_cards_in_wrapper:nth-child(2){
+    max-height: 29%;
+}
+.two_cards_wrapper:nth-of-type(1) .activities_cards_in_wrapper:nth-child(1) .activities_images{
+    height: 80%;
+}
+.two_cards_wrapper:nth-of-type(1) .activities_cards_in_wrapper:nth-child(2) .activities_images{
+    height: 65%;
+}
+    
+.two_cards_wrapper:nth-of-type(2) .activities_cards_in_wrapper:nth-child(1){
+    max-height: 50%;
+}
+.two_cards_wrapper:nth-of-type(2) .activities_cards_in_wrapper:nth-child(2){
+    max-height: 42%;
+}
+.two_cards_wrapper:nth-of-type(2) .activities_cards_in_wrapper:nth-child(1) .activities_images{
+    height: 75%;
+}
+.two_cards_wrapper:nth-of-type(2) .activities_cards_in_wrapper:nth-child(2) .activities_images{
+    height: 75%;
+}
+
+.activities_cards_text{
+    padding: 10px;
+}
+
+
+
+/* FOOTER */
+#footer_wrapper{
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-top: 50px;
+    height: 250px;
+}
+#about_section{
+    flex: 0 0 31%;
+}
+#our_accomodation_section{
+    flex: 0 0 22%;
+}
+#assistance_section{
+    flex: 0 0 18%;
+}
+}
+
+
+
+
+
+
+
 
 /* Media query for Mobile breakpoint */
 @media all and (max-width: 768px){
@@ -1001,8 +1138,8 @@ nav{
         margin: 0px; /* No margin on mobile */
         display: flex;
         flex-wrap: wrap-reverse;
-        gap: 10px; /* Small gap for mobile */
-        margin-bottom: 40px;
+        gap: 0px; /* no gap for mobile */
+        margin-bottom: 20px;
     }
 
 
@@ -1014,7 +1151,7 @@ nav{
         flex-wrap: wrap;
         justify-content: center;
         gap: 15px;
-        padding: 30px;
+        padding: 15px;
         border-radius: 25px;
     }
     #accomodations_cards_wrapper > h2{ /* Make both title take 100% of width */
@@ -1022,13 +1159,13 @@ nav{
     }
     #accomodations_cards_wrapper > h3{
         flex: 1 1 100%;
+        padding-left: 5px;
         padding-top: 20px;
-        padding-bottom: 20px;
     }
 
     .accomodations_cards{
         background-color: #fff;
-        flex: 0 1 350px;
+        flex: 0 1 350px; 
         height: 190px;
         border-radius: 25px;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -1149,13 +1286,106 @@ nav{
 
 
 
-    /* BODY SECTION 2 */
-    /* ACTIVITIES CARDS */
-    #main_body_wrapper2{
-        display: none;
-        margin-bottom: 40px;
-    }
+/* BODY SECTION 2 */
+/* ACTIVITIES CARDS */
+#main_body_wrapper2{
+    margin: 0px; /* No margin for mobile */
+    margin-bottom: 20px;
+    height: 1320px; /* Match content */
+}
+#activities_title{
+    padding: 20px;
+}
+.activities_cards_wrapper{ 
+   padding-top: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 20px;
+    height: 600px;
+}
+.activities_cards{
+    flex: 0 1 190px; /* Same as the other mobile cards */
+    width: 350px;
+    max-height: 190px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.activities_cards:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
+.activities_cards_container{ /* Entirely clickable */
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.activities_images{
+    width: 100%;
+    height: 70%;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    object-fit: cover;
+}
+.two_cards_wrapper{
+    flex: 0 1 400px; /* Same as the other mobile cards */
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.activities_cards_in_wrapper{
+    max-height: 190px; /* For the images not to streatch the container */
+    flex: 0 1 190px;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 25px;
+}
+.activities_cards_in_wrapper:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
 
+.two_cards_wrapper:nth-of-type(1) .activities_cards_in_wrapper:nth-child(1){
+    max-height: 190px;
+}
+.two_cards_wrapper:nth-of-type(1) .activities_cards_in_wrapper:nth-child(2){
+    max-height: 190px;
+}
+.two_cards_wrapper:nth-of-type(1) .activities_cards_in_wrapper:nth-child(1) .activities_images{
+    height: 70%;
+}
+.two_cards_wrapper:nth-of-type(1) .activities_cards_in_wrapper:nth-child(2) .activities_images{
+    height: 70%;
+}
+.two_cards_wrapper:nth-of-type(2) .activities_cards_in_wrapper:nth-child(1){
+    max-height: 190px;
+}
+.two_cards_wrapper:nth-of-type(2) .activities_cards_in_wrapper:nth-child(2){
+    max-height: 190px;
+}
+.two_cards_wrapper:nth-of-type(2) .activities_cards_in_wrapper:nth-child(1) .activities_images{
+    height: 70%;
+}
+.two_cards_wrapper:nth-of-type(2) .activities_cards_in_wrapper:nth-child(2) .activities_images{
+    height: 70%;
+}
+
+.activities_cards_text{
+    padding: 15px;
+}
+
+
+
+/* FOOTER */
+#footer_wrapper{
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-bottom: 20px; /* To put some more background at the bottom */
+    height: 100%;
+}
 }
 
 
